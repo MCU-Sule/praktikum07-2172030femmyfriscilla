@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="2172030 Femmy Friscilla Susilo">
+    <title>Soal 1</title>
+</head>
+<body>
+    <script>
+        /*mawar 5000 tulip 8000 anggrek 10000*/
+        let mawar; mawar = 5000;
+        let tulip; tulip = 8000;
+        let anggrek; anggrek = 10000;
+
+        let a = prompt("Berapa mawar yang ingin dibeli? (Rp 5000)")
+        let b = prompt("Berapa tulip yang ingin dibeli? (Rp 8000)")
+        let c = prompt("Berapa anggrek yang ingin dibeli? (Rp 10000)")
+        let d = prompt("Uang yang dibayarkan adalah")
+
+        let hm = a*mawar;
+        let ht = b*tulip;
+        let ha = c*anggrek;
+        let harga = hm+ht+ha;
+        let kembalian = d - harga;
+
+        document.write("Anda membeli mawar sebanyak <b>"+a+" </b> dengan harga total Rp." +hm+"<br>")
+        document.write("Anda membeli mawar sebanyak <b>"+b+" </b> dengan harga total Rp." +ht+"<br>")
+        document.write("Anda membeli mawar sebanyak <b>"+c+" </b> dengan harga total Rp." +ha+"<br>")
+        document.write("Total belanjaan anda <b> Rp." +harga+"</b><br><br>")
+        if (d>harga) {
+            document.write("Kembalian anda adalah Rp." + kembalian)
+        }
+        else {
+            document.write("Uang anda tidak mencukupi")
+        }
+    </script>
+</body>
+</html>

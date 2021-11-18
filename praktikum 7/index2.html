@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="2172030 Femmy Friscilla Susilo">
+    <title>Soal 2</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Berapa harga belanjaan anda?")
+        let b = prompt("Berapa uang yang dibayar?")
+        let c = b-a;
+
+        let pertama = Math.floor (c/100000);
+        let c1= c-(pertama*100000);
+        let kedua = Math.floor (c1/50000);
+        let c2= c1-(kedua*50000);
+        let ketiga = Math.floor (c2/20000);
+        let c3= c2-(ketiga*20000);
+        let keempat = Math.floor (c3/10000);
+        let c4= c3-(keempat*10000);
+        let kelima = Math.floor (c4/5000);
+        let c5= c4-(kelima*5000);
+        let keenam = Math.floor (c5/2000);
+        let c6= c5-(keenam*2000);
+        let ketujuh = Math.floor (c6/1000);
+        let c7= c6-(ketujuh*1000);
+        let kedelapan = Math.floor (c7/500);
+        let c8= c7-(kedelapan*500);
+        let kesembilan =c8;
+
+        document.write("Harga belanjaan anda adalah Rp. "+a+"<br>")
+        document.write("Uang yang dibayarkan adalah Rp. "+b+"<br><br>")
+        document.write("Kembalian anda adalah Rp. "+c+" dengan rincian sebagai berikut:"+"<br>")
+
+        if (pertama>0){
+            document.write("Uang Rp.100000 sebanyak"+pertama+"lembar"+"<br>")
+        }
+        if (kedua>0){
+            document.write("Uang Rp.50000 sebanyak"+kedua+"lembar"+"<br>")
+        }
+        if (ketiga>0){
+            document.write("Uang Rp.20000 sebanyak"+ketiga+"lembar"+"<br>")
+        }
+        if (keempat>0){
+            document.write("Uang Rp.10000 sebanyak"+keempat+"lembar"+"<br>")
+        }
+        if (kelima>0){
+            document.write("Uang Rp.5000 sebanyak"+kelima+"lembar"+"<br>")
+        }
+        if (keenam>0){
+            document.write("Uang Rp.2000 sebanyak"+keenam+"lembar"+"<br>")
+        }
+        if (ketujuh>0){
+            document.write("Uang Rp.1000 sebanyak"+ketujuh+"lembar"+"<br>")
+        }
+        if (kedelapan>0){
+            document.write("Uang Rp.500 sebanyak"+kedelapan+"lembar"+"<br>")
+        }
+        if(kesembilan>0){
+            document.write("Sisa kembalian Rp."+kesembilan)
+        }  
+    </script>
+</body>
+</html>
